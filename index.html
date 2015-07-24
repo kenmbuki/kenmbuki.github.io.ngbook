@@ -1,36 +1,37 @@
 <!DOCTYPE html>
-<html ng-app = "myApp">
+<html ng-app="myApp">
 
-  <head>
+<head>
     <title>Simple App</title>
-    <script src="../bower_components/angular/angular.js"></script>
+    <script src="bower_components/angular/angular.js"></script>
     <script src="script.js"></script>
-  </head>
+</head>
 
-  <body>
-    <h1>My First App</h1>
+<body>
+<h1>My First App</h1>
 
-    <div  ng-controller = "MyController">
-      <input ng-model="name" type="text" placeholder="Your Name">
-      <h1>Hello {{ name }}</h1>
+<div ng-controller="MyController">
+    <input ng-model="name" type="text" placeholder="Your Name">
 
-      <h5>{{ clock.now }} !</h5>
-        <br>
-        <br>
-      <input ng-model="to" type="email" placeholder="Recipient" />
-      <br>
-      <textarea ng-model="emailBody"></textarea>
-      <pre>{{ previewText }}</pre>
+    <h1>Hello {{ name }}</h1>
 
-    </div>
+    <h5>{{ clock.now }} !</h5>
+    <br>
+    <br>
+    <input ng-model="to" type="email" placeholder="Recipient"/>
+    <br>
+    <textarea ng-model="emailBody"></textarea>
+    <pre>{{ previewText }}</pre>
 
-    <div ng-controller="calcController">
-      <h4>Simplest machine</h4>
-      <button ng-click="add(1)" class="button">Add</button>
-      <a ng-click="subtract(1)" class="button alert">Subtract</a>
-      <h4> Current Count: {{ counter }}</h4>
-    </div>
+</div>
 
-  </body>
+<div ng-controller="calcController">
+    <h4>Simplest machine</h4>
+    <button ng-click="add(1)" class="button">Add</button>
+    <a ng-click="subtract(1)" class="button alert">Subtract</a>
+    <h4> Current Count: {{ counter }}</h4>
+</div>
+
+</body>
 
 </html>

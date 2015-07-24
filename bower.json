@@ -20,5 +20,8 @@
     "angular-ui-router": "~0.2.15",
     "angular-route": "~1.4.3",
     "fontawesome": "~4.3.0"
+  },
+  "devDependencies": {
+    "angular": "~1.4.3"
   }
 }
