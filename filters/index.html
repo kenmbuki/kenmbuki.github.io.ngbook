@@ -5,6 +5,7 @@
     <script src="../bower_components/angular/angular.js"></script>
     <link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap.css"/>
     <script src="controller.js"></script>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
@@ -17,7 +18,38 @@
         </div>
     </nav>
 </header>
-<div class="container" ng-controller="filterController">
+<div class="col-md-8">
+    <h3>Form Validation</h3>
+
+    <div>
+        <form ng-controller="validationCtrl" name="sampleForm" novalidate>
+            <p>
+
+                <label>Username:</label>
+                <input type="text" class="form-control" name="username" ng-model="username" required>
+                <span ng-show="sampleForm.username.$error.required">Username is required.</span>
+            </p>
+
+            <p>
+                <label>Email:</label>
+                <input type="email" class="form-control" name="email" ng-model="email" required>
+                <span ng-show="sampleForm.email.$error.required">Email is required.</span>
+                <span ng-show="sampleForm.email.$error.email">Invalid email address.</span>
+            </p>
+
+            <p>
+
+                <input type="submit" class="btn btn-primary" ng-disabled="sampleForm.$invalid" ng-click="checkData()">
+            </p>
+        </form>
+
+
+    </div>
+
+</div>
+<div class="col-md-4 container" ng-controller="filterController">
+    <h3>Filters</h3>
+
     <form class="form-inline">
         <input ng-model="query" type="text" placeholder="Filter By name" autofocus>
     </form>
@@ -26,6 +58,7 @@
         <li>{{friend.name}}</li>
     </ul>
 </div>
+
 
 </body>
 
