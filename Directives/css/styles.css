@@ -95,11 +95,3 @@ i{
     width: 250px;
   }
 }
-
-input.ng-invalid{
-    border: 1px solid red;
-}
-
-input.ng-valid{
-    border: 10px solid green;
-}
