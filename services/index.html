@@ -11,6 +11,7 @@
     <script src="../bower_components/angular-route/angular-route.js"></script>
     <script src="routes.js"></script>
     <script src="controller.js"></script>
+    <script src="service.js"></script>
 
 
 </head>
@@ -33,5 +34,15 @@
 <div class="container">
     <div ng-view></div>
 </div>
+<div class="container">
+        <div>
+            <div ng-controller="CalcController">
+                Enter a number:
+                <input type="number" ng-model="number">
+                <button  ng-click="findSquare()">Square</button>
+                <div>{{answer}}</div>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
