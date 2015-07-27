@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Firebase</title>
+    <link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap.min.css"/>
+    <script src="../bower_components/angular/angular.js"></script>
+    <script src="../bower_components/firebase/firebase.js"></script>
+    <script src='https://cdn.firebase.com/js/client/1.1.1/firebase.js'></script>
+    <script src="https://cdn.firebase.com/libs/angularfire/0.7.1/angularfire.js"></script>
+    <script src='analytics.js'></script>
+    <script src='dashboard.js'></script>
+
+</head>
+<body>
+<header>
+    <nav class="navbar navbar-default">
+        <div class="container">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="">Firebase - Analytics</a>
+            </div>
+        </div>
+    </nav>
+</header>
+<span>Analytics Dashboard</span>
+<section>
+    <span>Total Visitors: <span id="total-visitors"></span></span>
+</section>
+<section>
+    <span>Active Visitors</span>
+    <ul id="active-visitors"></ul>
+</section>
+<section>
+    <span>Past Visitors</span>
+    <ul id="past-visitors"></ul>
+</section>
+</body>
+</html>

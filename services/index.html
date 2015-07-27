@@ -2,7 +2,7 @@
 <html lang="en" ng-app="weather">
 <head>
     <meta charset="UTF-8">
-    <meta name="fragment" content="!" />
+    <meta name="fragment" content="!"/>
     <title>My ng-book App</title>
     <link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap.min.css"/>
     <link rel="stylesheet" href="../bower_components/font-awesome/css/font-awesome.css"/>
@@ -35,17 +35,18 @@
     <div ng-view></div>
 </div>
 <div class="container">
-        <div>
-            <div ng-controller="CalcController">
-                Enter a number:
-                <input type="number" ng-model="number">
-                <button  ng-click="findSquare()">Square</button>
-                <div>{{answer}}</div>
-            </div>
+    <div>
+        <div ng-controller="CalcController">
+            Enter a number:
+            <input type="number" ng-model="number">
+            <button ng-click="findSquare()">Square</button>
+            <div>{{answer}}</div>
         </div>
     </div>
-<div>
+    <div>
     <a href="../CORS/index.html">CORS</a>
 </div>
+</div>
+
 </body>
 </html>
