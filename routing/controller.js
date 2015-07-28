@@ -15,11 +15,3 @@ angular.module("weather")
 .controller("contactController", function($scope){
     $scope.message = 'Contact Me Buddy !!';
 })
-
-// inline array notation to avoid problems on minification
-//controller('aboutController', ['$scope', '$http', function (s, h) {
-//    h.get('https://api.github.com/users/angular/repos')
-//        .success(function (repos) {
-//        s.repos = repos;
-//    });
-//}])
