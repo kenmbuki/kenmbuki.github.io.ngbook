@@ -22,18 +22,14 @@
 <div class="container" ng-controller="mainController">
     <header class="text-center">
         <h1>Animating Angular Apps
-            <small>ngShow and ngHide</small>
+            <small>ngShow, ngClick and ngHide</small>
         </h1>
-
-        <!-- use ng-click to toggle true and false -->
         <a class="btn btn-primary" href="#" ng-click="lions = !lions" ng-class="{ active: lions }">Toggle Lions</a>
         <a class="btn btn-success" href="#" ng-click="cranes = !cranes" ng-class="{ active: cranes }">Toggle Cranes</a>
     </header>
 
     <div class="row">
         <div class="col-xs-6">
-
-            <!-- show and hide the lion picture -->
             <div class="jumbotron" ng-show="lions">
                 <img src="pics/1.jpg"
                      class="img-responsive img-thumbnail">
