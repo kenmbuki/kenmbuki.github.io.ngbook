@@ -16,7 +16,6 @@ angular.module('myApp', [])
     });
   }])
 .factory('githubService', ['$http', function($http) {
-
   var doRequest = function(username, path) {
     return $http({
       method: 'JSONP',
