@@ -34,3 +34,4 @@ app.controller('UpdateCtrl', function($scope) {
     $scope.updated++;
   });
 });
+
