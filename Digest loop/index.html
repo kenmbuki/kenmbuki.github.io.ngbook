@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html ng-app="app">
+<head>
+    <title>Digest Loop</title>
+    <script src="../bower_components/angular/angular.js"></script>
+    <link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap.css"/>
+    <script src="controller.js"></script>
+</head>
+
+<body>
+<header>
+    <nav class="navbar navbar-default">
+        <div class="container">
+            <div class="navbar-header">
+                <a class="navbar-brand">Digest Loop and $apply </a>
+            </div>
+        </div>
+    </nav>
+</header>
+<div class="container">
+    <div class="col-sm-6" ng-controller="MainCtrl">
+        <clickable foo="foo" bar="bar"></clickable>
+    </div>
+
+    <div class="col-sm-6" ng-controller="UpdateCtrl">
+        <input ng-model="name"/> Name updated: {{updated}} times.
+    </div>
+
+    <div>
+
+    </div>
+
+</div>
+
+
+<div class="container">
+    <a href="../Animation/index.html">Animation</a>
+</div>
+</body>
+</html>
