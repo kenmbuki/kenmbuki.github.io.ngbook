@@ -42,9 +42,25 @@
         </div>
     </div>
 </div>
-<div class="">
-    <a href=""></a>
+
+<div class="col-sm-12"><h1>Lesson By Owaga</h1></div>
+<div class="content col-sm-12">
+    AngularJS is an MVC framework for building web applications. The core features include HTML enhanced with
+    custom component and data-binding capabilities,
+    dependency injection and strong focus on simplicity, testability, maintainability
+    and boiler-plate reduction.
 </div>
+
+<div class="content col-sm-12" ng-class="{ 'content': slidein }">
+    <h2>AngularJS is an MVC framework for building web applications. The core features include HTML enhanced with
+    custom component and data-binding capabilities,
+    dependency injection and strong focus on simplicity, testability, maintainability
+    and boiler-plate reduction.</h2>
+</div>
+
+<button class="btn btn-primary" ng-click="slidein = !slidein" >
+Content
+</button>
 </body>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.3/angular-animate.js"></script>
 </html>
