@@ -77,3 +77,20 @@ animation:0.5s flipInX ease;
 .content {
 animation: 3s slidein;
 }
+
+.test{
+/*animation: 3s slidein;*/
+color: red;
+transition: 3s linear all;
+}
+
+.test .ng-enter{
+    color: green;
+    animation-duration: 3s;
+    animation: 3s slidein;
+}
+
+.test .ng-enter.ng-enter-active {
+    /*opacity:1;*/
+    color: green;
+}

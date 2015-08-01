@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+<head>
+    <title>Chrome Apps</title>
+    <script src="../bower_components/angular/angular.js"></script>
+    <script src="../bower_components/angular-touch/angular-touch.js"></script>
+    <script src="../bower_components/angular-gestures/gestures.js"></script>
+    <script src="../bower_components/hammerjs/hammer.js"></script>
+    <link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap.css"/>
+    <script src="app.js"></script>
+</head>
+
+<body>
+<header>
+    <nav class="navbar navbar-default">
+        <div class="container">
+            <div class="navbar-header">
+                <a class="navbar-brand">Chrome App</a>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<div class="container">
+    <div class="col-md-4">
+        <button class="btn btn-danger" nglick="save()">Click Me</button>
+    </div>
+    <div class="col-md-8">
+        <h1>Photo Slider</h1>
+
+        <div>
+            <div id="photowrapper" ng-controller="PhotoController">
+                <div class="cardProps"
+                     hm-tap="tapped($event)">
+                    <div class="tradingcard">
+                        <img src="img/1.jpg" alt=""/>
+                        <span>Elephant 1</span>
+                    </div>
+                    <div class="tradingcard">
+                        <img src="img/2.jpg" alt=""/>
+                        <span>Elephant 2</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+</div>
+
+
+</body>
+
+</html>

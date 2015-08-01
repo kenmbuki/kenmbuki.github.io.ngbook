@@ -20,14 +20,14 @@
         </div>
     </nav>
 </header>
-<div class="container ">
+<div class="container">
 
     <div ng-controller="ServiceController" class="col-md-8">
         <label>Type in a GitHub username</label>
-        <input class="col-md-6" type="text" ng-model="username" placeholder="Enter a GitHub username, like dkaranja"/>
-        <pre ng-show="username">{{ events }}</pre>
-    </div>
-    <div>
+        <input class="form-control" type="text" ng-model="username"
+               placeholder="Enter a GitHub username, like dkaranja"/>
+        <pre ng-show="username">{{ events | json }}</pre>
+
         <a href="../firebase/index.html">FIREBASE</a>
     </div>
 </div>
